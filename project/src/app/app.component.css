@@ -1,0 +1,24 @@
+app-toolbar{
+    display: grid;
+    grid-area: toolbar;
+}
+app-navbar{
+    display: grid;
+    grid-area: navbar;
+}
+app-students{
+    display: grid;
+    grid-area: students;
+}
+@media screen and (min-width: 800px) {
+
+    #main{
+        height: auto;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto;
+        grid-template-areas: "toolbar toolbar" "navbar students";
+    }
+}
+
+    
