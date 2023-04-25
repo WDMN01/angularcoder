@@ -10,6 +10,10 @@ app-students{
     display: grid;
     grid-area: students;
 }
+app-formulario{
+    display: grid;
+    grid-area: formulario;
+}
 @media screen and (min-width: 800px) {
 
     #main{
@@ -17,7 +21,7 @@ app-students{
         display: grid;
         grid-template-columns: 20% 80%;
         grid-template-rows: auto;
-        grid-template-areas: "toolbar toolbar" "navbar students";
+        grid-template-areas: "toolbar toolbar" "navbar students" "navbar formulario";
     }
 }
 

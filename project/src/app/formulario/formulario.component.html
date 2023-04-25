@@ -1,0 +1,24 @@
+<p>formulario works!</p>
+<div class="mt-4">
+    <form [formGroup]="formularioprincipal" (submit)="submit()">
+        Nombre: <input type="text" formControlName="nombre" [ngClass]="
+        formularioprincipal.get('nombre')?.invalid &&
+        formularioprincipal.get('nombre')?.dirty
+          ? 'error'
+          : ''
+      "/>
+     
+        Edad: <input type="text" formControlName="edad" />
+        Genero: <input type="text" formControlName="genero" />
+        Correo: <input type="text" formControlName="Correo" [ngClass]="
+        formularioprincipal.get('Correo')?.invalid &&
+        formularioprincipal.get('Correo')?.dirty
+          ? 'error'
+          : ''
+      "/>
+        <button type="submit">Registrarse</button>
+    </form>
+    <br />
+
+    
+</div>
