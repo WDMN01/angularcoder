@@ -6,7 +6,7 @@ app-navbar{
     display: grid;
     grid-area: navbar;
 }
-app-students{
+app-tablamaterial{
     display: grid;
     grid-area: students;
 }

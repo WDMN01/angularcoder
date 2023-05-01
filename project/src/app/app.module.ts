@@ -7,6 +7,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { StudentsComponent } from './students/students.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormularioComponent } from './formulario/formulario.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './modulos/material/material.module';
+import { TablamaterialComponent } from './tablamaterial/tablamaterial.component';
+import { MiDirectivaDirective } from './mi-directiva.directive';
+import { MiPipePipe } from './mi-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -14,10 +19,13 @@ import { FormularioComponent } from './formulario/formulario.component';
     ToolbarComponent,
     NavbarComponent,
     StudentsComponent,
-    FormularioComponent
+    FormularioComponent,
+    TablamaterialComponent,
+    MiDirectivaDirective,
+    MiPipePipe
   ],
   imports: [
-    BrowserModule, ReactiveFormsModule
+    BrowserModule, ReactiveFormsModule, BrowserAnimationsModule, MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
